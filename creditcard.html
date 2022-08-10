@@ -1,0 +1,203 @@
+<div class="align-center">
+    <div class="card">
+        <header>
+            <h3 class="card-title">Payment Details</h3>
+            <img width="128" alt="Visa Inc. logo"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/128px-Visa_Inc._logo.svg.png"
+                class="logo" />
+                <title>Payment</title>
+        </header>
+        <style>
+            body {
+                margin: 0;
+                color: white;
+                font-family: 'Electrolize', sans-serif;
+            background-color: rgb(209, 253, 253);
+                background-size: cover;
+                background-position: center;
+            }
+
+            .align-center {
+                display: flex;
+                height: 100vh;
+                width: 100vw;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .card {
+                width: 500px;
+                height: 300px;
+                border-radius: 12px;
+                box-shadow: 2px 2px 0 #222, 2px 2px 15px rgba(0, 0, 0, 0.9);
+                background: black;
+                background: -webkit-linear-gradient(left, #000000, #282828);
+                background: -o-linear-gradient(right, #000000, #282828);
+                background: -moz-linear-gradient(right, #000000, #282828);
+                background: linear-gradient(to right, #000000, #282828)
+            }
+
+            .form {
+                padding-top: 110px;
+            }
+
+            .card-title {
+                float: left;
+                margin-left: 15px;
+            }
+
+            .logo {
+                float: right;
+                margin-top: 15px;
+                margin-right: 15px;
+            }
+
+            label {
+                display: block;
+            }
+
+            .card-number {
+                float: left;
+                margin-left: 15px;
+                margin-bottom: 10px;
+                color: white;
+            }
+
+            .card-number input {
+                height: 30px;
+                background-color: transparent;
+                border: none;
+                font-family: 'Electrolize', sans-serif;
+                color: #fff;
+            }
+
+            .card-name {
+                clear: both;
+                float: left;
+                margin-left: 15px;
+                margin-bottom: 15px;
+                color: #fff;
+            }
+
+            .card-name input {
+                height: 30px;
+                background-color: transparent;
+                border: none;
+                color: white;
+                font-family: 'Electrolize', sans-serif;
+            }
+
+            input:focus {
+                color: #fff;
+                outline: none;
+                border-bottom: 1px solid white;
+            }
+
+            .select-date {
+                clear: both;
+                float: left;
+                margin-left: 15px;
+            }
+
+            .card-cvc {
+                float: right;
+                margin-right: 15px;
+            }
+
+            .card-cvc input {
+                background-color: transparent;
+                border: none;
+                color: #fff;
+                font-family: 'Electrolize', sans-serif;
+            }
+
+            select {
+                border: none;
+                background-color: rgba(255, 255, 255, 0.2);
+                color: #fff;
+            }
+
+            option {
+                color: #000000;
+            }
+
+            .buy-button {
+                font-family: 'Electrolize', sans-serif;
+                cursor: pointer;
+                position: relative;
+                margin-top: auto;
+                margin-left: 64px;
+                margin-right: -100px;
+                padding: 10px 10px;
+                border-radius: 6px;
+                box-shadow: -2px 0px 6px 1px #000000;
+                background-color: #008535;
+                border: none;
+                color: #fff;
+            }
+
+            .buy-button:hover {
+                background-color: #66BB6A;
+                transition: linear 0.2s;
+            }
+
+        </style>
+    <body>
+        
+  
+        <form action="" class="form">
+            <div class="card-number">
+                <label for="number">Card Number</label>
+                <input id="number" type="text" size="40" placeholder="1234 1234 1234 1234" required />
+            </div>
+
+            <div class="card-name">
+                <label for="name">Name</label>
+                <input id="name" type="text" size="40" required placeholder="Vedant" />
+            </div>
+
+            <div class="input-row">
+                <div class="select-date">
+                    <label for="date">Expiration</label><br>
+                    <select name="" id="date">
+                        <option value="00"></option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select name="" id="date">
+                        <option value="0000"></option>
+                        <option value="2021">2015</option>
+                        <option value="2021">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2021">2022</option>
+                        <option value="2021">2023</option>
+                    </select>
+                </div>
+
+                <div class="card-cvc">
+                    <label for="cvc">CVV</label><br>
+                    <input id="cvc" type="text" size="5" placeholder="123" required />
+                </div>
+
+                <button class="buy-button"><a href="maintenanace.html" style="color: white; text-decoration: none;">Proceed</a></button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+</body>
